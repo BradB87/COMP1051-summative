@@ -1,0 +1,155 @@
+/* main section*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+
+
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: #13305D;
+    font-style: OCR A Extended;
+
+
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    font-size: 16px;
+    color: #13305D;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+
+/*content grid*/
+#content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    min-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#content>* {
+
+    padding: 30px;
+}
+
+/*grid content*/
+#grid {
+    display: grid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100%, auto);
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding: 0;
+    display: none;
+}
+
+#grid p {
+    border: 8px solid;
+    background: #000;
+    opacity: 0.2;
+}
+
+input:checked+#content #grid {
+    display: grid;
+}
+
+/*header*/
+header {
+    grid-column: 1/13;
+    background-color: #13305D;
+
+}
+
+main {
+
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(44, 94, 161, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    grid-column: 1/13;
+    grid-row: 2/4;
+}
+
+section {
+    background-color: #13305D;
+    grid-column: 1/13;
+    grid-row: 4/6;
+}
+
+.card-body2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: #13305D 2px solid;
+    color: #3CA12C;
+    background-color: #13305D;
+
+}
+
+.card-title {
+    font-size: 65px;
+    background-image: url(../images/steve-johnson-p82FiVi13ns-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #009432;
+    padding: 1em;
+}
+
+/* footer*/
+footer {
+    grid-column: 1/12;
+    background-color: #3CA12C;
+
+}
+
+div.card-body {
+    background-color: #13305D;
+    border: #3CA12C 6px solid;
+
+
+}
+
+.div.card.body2,
+p {
+    padding-top: 1em;
+    font-size: 16px;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    padding-bottom: 1em;
+
+}
